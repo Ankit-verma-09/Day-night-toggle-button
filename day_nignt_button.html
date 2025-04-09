@@ -16,19 +16,8 @@
             height: 30px;
         }
         .form-switch .form-check-input {
-        /* width: 100px; */
-        /* height: 50px; */
         background-repeat: no-repeat;
-        /* background-position: left center; */
-        /* transition: background-position 0.3s ease-in-out; */
-        /* border-radius: 25px; Keeps a rounded switch */
-        /* border: 2px solid black; Matches the switch border */
-        /* background-size: 50%; */
         }
-
-        /* .form-switch .form-check-input:focus {
-            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
-        } */
 
         .form-switch .form-check-input:checked {
             background-position: right center;
@@ -54,19 +43,15 @@
     <script>
         let body=document.querySelector("body");
         let input=document.querySelector("#flexSwitchCheckChecked");
-        // let button=document.querySelector(".form-check-input");
         input.addEventListener("click", function() {
             if (input.checked) {
-                // status.innerText = "Checkbox is checked!";
                 body.style.backgroundColor="black";
-                // body.style.animationDelay="0.5s";
                 input.style.backgroundColor="white";
                 input.style.borderColor="white";
                 input.style.boxShadow="none";
                 input.style.setProperty("--knob-color", "white");
                 console.log(input.checked);
             } else {
-                // status.innerText = "Checkbox is not checked.";
                 body.style.backgroundColor="white";
                 input.style.backgroundColor="black";
                 input.style.Color="black";
